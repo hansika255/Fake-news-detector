@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <form action="/predict" method="POST">
+        <textarea name="news" placeholder="Paste news content here..." required></textarea>
+        <button type="submit">Check News</button>
+    </form>
+</div>
+{% endblock %}
